@@ -5,10 +5,35 @@ import V2HookCounter from './components/V2HookCounter';
 import V3HookCounterTwo from './components/V3HookCounterTwo';
 import V4HookCounterThree from './components/V4HookCounterThree';
 import V5HookCounterFour from './components/V5HookCounterFour';
+import V7ClassCounter from './components/V7ClassCounter';
+import V7HookCounterOne from './components/V7HookCounterOne';
+import V8ClassCounter from './components/V8ClassCounter';
+import V8HookCounterOne from './components/V8HookCounterOne';
+import V9HookMouse from './components/V9HookMouse';
 
 function App() {
   return (
     <div className="App">
+
+
+      <h3>---------------Video  9 Run Effects only one-----------------------</h3>
+      <V9HookMouse>
+
+      </V9HookMouse>
+      <h3>---------------Video  8 - Conditionally run effects-----------------------</h3>
+      <V8ClassCounter>
+
+      </V8ClassCounter>
+      <V8HookCounterOne>
+
+      </V8HookCounterOne>
+      <h3>---------------Video  7 - useEffect after render-----------------------</h3>
+      <V7ClassCounter>
+
+      </V7ClassCounter>
+      <V7HookCounterOne>
+
+      </V7HookCounterOne>
 
       <h3>---------------Video  5 - useState with array-----------------------</h3>
       <V5HookCounterFour>
