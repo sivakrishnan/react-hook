@@ -14,6 +14,12 @@ function V9HookMouse() {
     useEffect(() => {
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition)
+
+        // video 10 useEffect() cleanup code
+        return () => {
+            console.log('component unmounting code')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, [])
     return (
         <div>
