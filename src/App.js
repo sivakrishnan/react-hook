@@ -24,6 +24,18 @@ import V21CounterThree from './components/V21CounterThree';
 import V22ComponentB from './components/V22ComponentB';
 import V22ComponentC from './components/V22ComponentC';
 import V22ComponentA from './components/V22ComponentA';
+import V23DataFetchingOne from './components/V23DataFetchingOne';
+import V24DataFetchingTwo from './components/V24DataFetchingTwo';
+import V26ParentComponent from './components/V26ParentComponent';
+import V27Counter from './components/V27Counter';
+import V28FocusInput from './components/V28FocusInput';
+import V29ClassTimer from './components/V29ClassTimer';
+import V29HookTimer from './components/V29HookTimer';
+import V31DocTitleOne from './components/V31DocTitleOne';
+import V31DocTitleTwo from './components/V31DocTitleTwo';
+import V32CounterOne from './components/V32CounterOne';
+import V32CounterTwo from './components/V32CounterTwo';
+import V33UserForm from './components/V33UserForm';
 
 
 export const UserContext = React.createContext()
@@ -52,6 +64,68 @@ function App() {
 
   return (
     <div className="App">
+      <h3>---------------Video 33 Custom Hook UseInput-----------------------</h3>
+      <V33UserForm></V33UserForm>
+      <h3>---------------Video 32 Custom Hook useCounter-----------------------</h3>
+      <V32CounterOne></V32CounterOne>
+      <V32CounterTwo></V32CounterTwo>
+      <h3>---------------Video 31 useDocumentTitle Custom -----------------------</h3>
+      <V31DocTitleOne></V31DocTitleOne>
+      <V31DocTitleTwo></V31DocTitleTwo>
+      <h3>---------------Video 29 useRef Hook, -----------------------</h3>
+      <V29ClassTimer></V29ClassTimer>
+      <V29HookTimer></V29HookTimer>
+      <h3>---------------Video 28 useRef Hook -----------------------</h3>
+      <V28FocusInput></V28FocusInput>
+      <h3>---------------Video 27 useMemo Hook -----------------------</h3>
+      <V27Counter></V27Counter>
+      <h3>---------------Video 26 useCallback Hook -----------------------</h3>
+      <V26ParentComponent></V26ParentComponent>
+      <h3>---------------Video 25 useState vs useReducer -----------------------</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>useState</th>
+            <th>useReducer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Type of state</td>
+            <td>Number, String, Boolean</td>
+            <td>Object or Array</td>
+          </tr>
+          <tr>
+            <td>Number of state transitions</td>
+            <td>One or two</td>
+            <td>Too many</td>
+          </tr>
+          <tr>
+            <td>Related state transitions?</td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Business Logic</td>
+            <td>No Business Logic</td>
+            <td>Complex Business Logic</td>
+          </tr>
+          <tr>
+            <td>Local vs global</td>
+            <td>Local</td>
+            <td>Global</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>---------------Video 24 Fetching data with useReducer -----------------------</h3>
+      <V24DataFetchingTwo>
+
+      </V24DataFetchingTwo>
+      <h3>---------------Video 23 Fetching data with useReducer -----------------------</h3>
+      <V23DataFetchingOne>
+
+      </V23DataFetchingOne>
       <h3>---------------Video 22 useReducer with useContext -----------------------</h3>
       <CountContext.Provider value={{ countState: count, countDispatch: dispatch, test: 'test', test1: 'test1' }}>
         Counter from App.js File-{count}
